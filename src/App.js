@@ -54,9 +54,9 @@ const App = () => {
           </h1>
 
           {/* CA Address */}
-          {/* <h2 className="text-sm sm:text-md md:text-lg lg:text-xl bg-yellow-500 text-center rounded-xl font-bold text-black px-3 py-2">
-      CA : 4Lf3wTvFa5pkzkQpXTHovPyJWbyHTvTyTq228b1Hpump
-    </h2> */}
+          <h2 className="text-sm sm:text-md md:text-lg lg:text-xl bg-yellow-500 text-center rounded-xl font-bold text-black px-3 py-2">
+            CA : 4Xkqadk6JJg47sc297Gt76BimyXBYJo87dWUKcYFpump
+          </h2>
         </div>
       </section>
 
