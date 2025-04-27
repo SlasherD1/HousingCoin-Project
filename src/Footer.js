@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="flex flex-col gap-2 items-center justify-center">
         <div className="flex gap-2 items-center">
           <a
-            href="https://x.com/housingcoin"
+            href="https://x.com/housingcoinn"
             target="_blank"
             rel="noopener noreferrer"
           >

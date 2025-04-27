@@ -50,7 +50,7 @@ const App = () => {
           <h1 className="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl px-2 sm:px-4 md:px-8 py-4 sm:py-6 font-boldoa text-center leading-tight">
             THE <span className="text-yellow-500">SHORTCUTS SOLUTION</span> FOR
             YOU WITHOUT SPENDING DECADES SAVING FOR{" "}
-            <span className="text-yellow-500">A HOUSING</span>
+            <span className="text-yellow-500">HOUSING</span>
           </h1>
 
           {/* CA Address */}
@@ -84,13 +84,20 @@ const App = () => {
               HOUSINGCOIN?
             </h1>
             <p className="text-base md:text-lg font-semibold">
-              Housing Coin is a digital innovation created to simplify and
-              modernize housing transactions. It provides a secure and
-              transparent way for people to buy, sell, or manage property
-              ownership without complicated processes. By using Housing Coin,
-              every transaction becomes easier, faster, and more reliable,
-              helping both individuals and communities to handle housing
-              needs more smoothly.
+              Housing used to be simple. A roof, four walls, peace with
+              affordable prices. Now? Good luck out there.
+            </p>
+            <p className="text-base md:text-lg font-semibold">
+              Housing Coin is here because someone had to do something. We’re
+              not promising castles in the sky. We’re just flipping the script —
+              and maybe the floorplan too.
+            </p>
+            <p className="text-base md:text-lg font-semibold">
+              No empty promises. No wild dreams. Just a coin. About houses. Take
+              it or leave it.
+            </p>
+            <p className="text-base md:text-lg font-semibold">
+              Hold $HOUSING. Touch grass.
             </p>
           </div>
 
@@ -114,7 +121,7 @@ const App = () => {
       >
         <div className="flex flex-col lg:flex-col items-center gap-5 justify-center text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
           <div className="flex items-center gap-4 text-yellow-500 font-bold">
-            <span className="font-boldoa">1 $HOUSINGCOIN = 1 HOUSE</span>
+            <span className="font-boldoa">1 $HOUSING = 1 HOUSE</span>
             <img
               src={HouseIcon}
               alt="Logo"
@@ -186,13 +193,20 @@ const App = () => {
           className="rajdhani text-white px-6 md:px-16 lg:px-32 py-[5vh] md:py-[7vh] lg:py-[20vh]"
         >
           <div className="text-white font-bold flex flex-col items-center justify-center gap-2 bg-black/30 backdrop-blur-sm py-7 px-6 sm:px-12 lg:px-32 rounded-xl text-md sm:text-lg md:text-xl lg:text-2xl text-center">
-            With traditional housing systems becoming more complicated and less
-            accessible, Housing Coin offers a fresh and straightforward
-            alternative. It eliminates unnecessary barriers and inefficiencies,
-            giving people a simpler and clearer path to manage housing-related
-            activities. Housing Coin ensures that everyone can participate in a
-            fair and modernized housing environment where processes are open,
-            easy, and understandable.
+            <span>
+              Tired of being outbid by someone who didn’t even visit the house?
+              Mortgage rates doing backflips while you just want a bathroom that
+              locks? Same.
+            </span>
+            <span>
+              Housing Coin said: "If the game’s rigged, change the game." No
+              middlemen, no red tape, no need to summon ancient spirits to close
+              a deal.
+            </span>
+            <span>
+              We’re not here to sell you dreams. We’re just here to make housing
+              suck less.
+            </span>
           </div>
         </div>
       </section>
@@ -217,7 +231,7 @@ const App = () => {
             {[
               { number: "1000", label: "TOTAL SUPPLY" },
               { number: "1000", label: "LP BURN" },
-              { number: "1000", label: "LP HOLDERS" },
+              { number: "1000", label: "Buy/Sell tax 0%" },
             ].map((item, idx) => (
               <div
                 key={idx}
@@ -268,7 +282,7 @@ const App = () => {
               {
                 icon: <FaXTwitter size={80} />,
                 text: "JOIN X",
-                link: "https://x.com/housingcoin",
+                link: "https://x.com/housingcoinn",
               },
               {
                 icon: <FaTelegramPlane size={80} />,

@@ -31,7 +31,7 @@ const Navbar = () => {
         </a>
 
         <a
-          href="https://x.com/housingcoin"
+          href="https://x.com/housingcoinn"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2"
@@ -75,7 +75,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://x.com/housingcoin"
+            href="https://x.com/housingcoinn"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2"
