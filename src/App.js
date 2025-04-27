@@ -228,9 +228,9 @@ const App = () => {
           {/* Box Info */}
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6">
             {[
-              { number: "1000", label: "TOTAL SUPPLY" },
-              { number: "1000", label: "LP BURN" },
-              { number: "1000", label: "Buy/Sell tax 0%" },
+              { number: "1,000,000,000", label: "TOTAL SUPPLY" },
+              { number: "100%", label: "LP BURN" },
+              { number: "0%", label: "Buy/Sell tax" },
             ].map((item, idx) => (
               <div
                 key={idx}
