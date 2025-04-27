@@ -1,12 +1,23 @@
 import React from "react";
 import { useState } from "react";
 import "./App.css";
-import "./assets/fonts/Bugaki.otf";
+import "./assets/fonts/Paalalabas.otf";
 import bgAlter1 from "./assets/images/Gambar-2.gif";
 import Background1 from "./assets/images/Background-1.mp4";
 import Background2 from "./assets/images/Background-2.png";
+import Background3 from "./assets/images/Background-3.png";
+import Background4 from "./assets/images/Background-4.png";
+import Background5 from "./assets/images/Background-5.mp4";
+import Background6 from "./assets/images/Background-6.mp4";
+import Background7 from "./assets/images/Background-7.mp4";
+import LogoS1 from "./assets/images/LogoS1.png";
+import HouseIcon from "./assets/images/house-icon.png";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { FaTelegram, FaXTwitter } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
+import logoPump from "./assets/images/pump_black.png";
+import logoDex from "./assets/images/logo_dex1.png";
 
 const App = () => {
   return (
@@ -14,7 +25,7 @@ const App = () => {
       <Navbar />
       <section
         id="hero"
-        className="rajdhani relative bg-cover bg-center bg-no-repeat min-h-screen w-full text-white flex items-end justify-center px-6 md:px-16 lg:px-32 pb-20 text-center overflow-hidden"
+        className="rajdhani relative bg-cover bg-center bg-no-repeat min-h-screen w-full text-white flex items-center justify-center px-4 md:px-12 lg:px-24 text-center overflow-hidden"
       >
         <video
           autoPlay
@@ -27,82 +38,260 @@ const App = () => {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-10 w-full max-w-6xl flex flex-col items-center justify-start">
-          <h1 className="md:text-9xl text-5xl px-4 py-2 font-boldoa">
-            Welcome
+        <div className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center gap-6 z-10 mt-10 sm:mt-16 md:mt-24">
+          {/* Gambar tengah */}
+          <img
+            src={LogoS1}
+            alt="Logo"
+            className="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[600px] h-auto"
+          />
+
+          {/* Judul besar */}
+          <h1 className="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl px-2 sm:px-4 md:px-8 py-4 sm:py-6 font-boldoa text-center leading-tight">
+            THE <span className="text-yellow-500">SHORTCUTS SOLUTION</span> FOR
+            YOU WITHOUT SPENDING DECADES SAVING FOR{" "}
+            <span className="text-yellow-500">A HOUSE</span>
           </h1>
-          <h2 className="md:text-6xl text-2xl font-bold text-white px-4 py-2 font-boldoa">
-            Y U HERE
-          </h2>
-          {/* <h2 className="text-base md:text-xl text-sm bg-yellow-500 rounded-xl font-bold text-black px-4 py-2">
-            CA : 6peK3JRbBPBUgefMhzWEhJPuohaeaTu1WLWYueYtpump
-          </h2> */}
+
+          {/* CA Address */}
+          {/* <h2 className="text-sm sm:text-md md:text-lg lg:text-xl bg-yellow-500 text-center rounded-xl font-bold text-black px-3 py-2">
+      CA : 4Lf3wTvFa5pkzkQpXTHovPyJWbyHTvTyTq228b1Hpump
+    </h2> */}
         </div>
       </section>
 
-      <br></br>
-      <section className="rajdhani text-white px-6 md:px-16 lg:px-40 py-20">
-        <div className="flex flex-col lg:flex-row items-center gap-10 justify-center mb-10 text-center lg:text-left">
-          <div className="w-full lg:w-1/2">
-            <div className="w-full h-full">
-              <img
-                src={bgAlter1}
-                alt="Logo"
-                className="drop-shadow-2xl rounded-sm w-[500px] h-auto"
-              />
-            </div>
+      <section className="relative rajdhani text-white px-6 md:px-16 lg:px-32 py-[200px] overflow-hidden">
+        {/* Background Video */}
+        <video
+          autoPlay
+          src={Background7}
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm z-0"></div>
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 justify-center text-center lg:text-left">
+          <div className="flex flex-col gap-4 max-w-xl">
+            <h1 className="font-bold text-[36px] md:text-[50px] leading-tight font-boldoa text-yellow-500">
+              WHAT IS
+            </h1>
+            <h1 className="font-bold text-[36px] md:text-[50px] leading-tight font-boldoa text-yellow-500">
+              HOUSECOIN?
+            </h1>
+            <p className="text-base md:text-lg font-semibold">
+              HouseCoin is a digital innovation created to simplify and
+              modernize housing transactions. It provides a secure and
+              transparent way for people to buy, sell, or manage property
+              ownership without complicated processes. By using HouseCoin, every
+              transaction becomes easier, faster, and more reliable, helping
+              both individuals and communities to handle housing needs more
+              smoothly.
+            </p>
           </div>
 
-          <div className="flex flex-col gap-4 max-w-xl">
-            <h1 className="font-bold text-[36px] md:text-[60px] leading-tight font-boldoa">
-              Y U NO
-            </h1>
-            <h1 className="font-bold text-[36px] md:text-[60px] leading-tight font-boldoa">
-              KNO ?
-            </h1>
-            <h1 className="text-base md:text-lg container font-semibold">
-              We've been screaming, we've been memeing — and still... YOU NO
-              UNDERSTAND?! Crypto memes are life. Confusion is culture. You
-              don't need to get it — you just need to vibe with it.
-            </h1>
+          {/* Optional second column */}
+          <div className="w-full lg:w-1/2">
+            <div className="w-full h-full flex items-center justify-center">
+              {/* You can place an image/video/illustration here later */}
+            </div>
           </div>
         </div>
       </section>
 
       <section
         style={{
-          backgroundImage: `url(${Background2})`,
+          backgroundImage: `url(${Background3})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="rajdhani text-white px-6 md:px-16 lg:px-32 py-20"
+        className="rajdhani text-white px-6 md:px-16 lg:px-32 py-[200px]"
       >
-        <div className="flex flex-col lg:flex-row items-center gap-10 justify-center text-center lg:text-left">
-          <div className="flex flex-col gap-4 max-w-xl">
-            <h1 className="font-bold text-[36px] md:text-[50px] leading-tight font-boldoa">
-              Y STILL NO
-            </h1>
-            <h1 className="font-bold text-[36px] md:text-[50px] leading-tight font-boldoa">
-              JOIN?
-            </h1>
-            <p className="text-base md:text-lg font-semibold">
-              Every day we cry, we sweat, we meme... AND YET — YOU STILL NO
-              JOIN?! This is not a cult. (But maybe it should be.) Hit that
-              button, join the chaos. Before we lose what little
-              sanity we have left.
-            </p>
-            <button className="xl:self-start bg-white text-black font-reguler px-10 py-3 hover:bg-gray-200 transition duration-300 text-4xl font-boldoa">
-              JOIN! Y U NO JOIN
+        <div className="flex flex-col lg:flex-col items-center gap-5 justify-center text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          <div className="flex items-center gap-4 text-yellow-500 font-bold">
+            <span className="font-boldoa">1 $HOUSECOIN = 1 HOUSE</span>
+            <img
+              src={HouseIcon}
+              alt="Logo"
+              className="w-6 sm:w-8 md:w-10 lg:w-12 h-auto"
+            />
+          </div>
+
+          <div className="text-white font-bold flex flex-col items-center gap-2 bg-black/30 backdrop-blur-sm py-7 px-[80px] rounded-xl font-boldoa">
+            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
+              $0.0000 USD
+            </span>
+            <span className="text-md sm:text-lg md:text-xl lg:text-2xl">
+              HOUSE PRICE RN
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2 bg-black/30 backdrop-blur-sm py-4 px-8 rounded-xl">
+            <input
+              type="text"
+              placeholder="search for your dream house (1$housecoin = 1 house)"
+              className="flex-1 bg-transparent backdrop-blur-sm border border-yellow-500 outline-none text-white placeholder-white text-lg py-2 px-4 rounded-lg w-full max-w-lg"
+            />
+            <button className="bg-white text-black font-bold py-2 px-6 rounded-lg text-md sm:text-lg md:text-xl lg:text-2xl">
+              SEARCH
             </button>
           </div>
-          <div className="w-full lg:w-1/2">
-            <div className="w-full h-full flex items-center justify-center"></div>
+          <input
+            type="text"
+            placeholder="code"
+            className="flex-1 bg-transparent backdrop-blur-sm border border-yellow-500 outline-none text-white placeholder-white text-lg py-2 px-4 rounded-lg w-full max-w-lg"
+          />
+        </div>
+      </section>
+
+      <section className="relative">
+        <div className="relative h-[50vh] overflow-hidden">
+          {/* Video background */}
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src={Background5}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+
+          {/* Overlay hitam semi-transparan (optional biar teks lebih jelas) */}
+          <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
+
+          {/* Teks di atas video */}
+          <div className="relative rajdhani text-white px-6 md:px-16 lg:px-32 py-[20vh] flex flex-col items-center gap-5 justify-center text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <div className="text-yellow-500">
+              HOUSE MARKET IS A{" "}
+              <span>
+                JOKE NOWADAYS! <span>WELL TWO CAN PLAY</span> THAT GAME
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          style={{
+            backgroundImage: `url(${Background3})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            height: "50vh",
+          }}
+          className="rajdhani text-white px-6 md:px-16 lg:px-32 py-[5vh] md:py-[7vh] lg:py-[20vh]"
+        >
+          <div className="text-white font-bold flex flex-col items-center justify-center gap-2 bg-black/30 backdrop-blur-sm py-7 px-6 sm:px-12 lg:px-32 rounded-xl text-md sm:text-lg md:text-xl lg:text-2xl text-center">
+            With traditional housing systems becoming more complicated and less
+            accessible, HouseCoin offers a fresh and straightforward
+            alternative. It eliminates unnecessary barriers and inefficiencies,
+            giving people a simpler and clearer path to manage housing-related
+            activities. HouseCoin ensures that everyone can participate in a
+            fair and modernized housing environment where processes are open,
+            easy, and understandable.
           </div>
         </div>
       </section>
 
-      <br></br>
+      <section
+        style={{
+          backgroundImage: `url(${Background4})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="rajdhani text-white px-6 md:px-16 lg:px-32 py-[150px]"
+      >
+        <div className="flex flex-col items-center gap-10 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          {/* Judul */}
+          <div className="text-yellow-500 font-bold">
+            <span className="font-boldoa">OUR HOUSING PORTOFOLIO</span>
+          </div>
+
+          {/* Box Info */}
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6">
+            {[
+              { number: "1000", label: "TOTAL SUPPLY" },
+              { number: "1000", label: "LP BURN" },
+              { number: "1000", label: "LP HOLDERS" },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="text-white font-bold flex flex-col items-center gap-2 bg-black/30 backdrop-blur-sm py-6 px-10 rounded-xl font-boldoa border border-yellow-500 min-w-[250px]"
+              >
+                <span className="text-4xl md:text-5xl">{item.number}</span>
+                <span className="text-lg md:text-xl">{item.label}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Subtext */}
+          <div className="text-white font-bold text-md sm:text-lg md:text-xl lg:text-2xl">
+            <span className="font-boldoa">
+              NO PAPERWORK, NO MESSY REAL ESTATE, AND EASY TO USE
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative h-auto overflow-hidden">
+        {/* Video background */}
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src={Background6}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+
+        {/* Overlay hitam transparan */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
+
+        {/* Konten di atas video */}
+        <div className="relative rajdhani text-white px-6 md:px-16 lg:px-32 py-[200px] flex flex-col items-center gap-5 justify-center text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          {/* Judul */}
+          <div className="flex flex-col items-center gap-4 text-white font-bold">
+            <span className="font-boldoa">WAIT 30 YEARS FOR YOUR DREAM</span>
+            <span className="font-boldoa">HOUSE. OR? YOU CAN JUST OWN A</span>
+            <span className="font-boldoa">HOUSE NOW.</span>
+          </div>
+
+          <br></br>
+          {/* 3 kotak statistik */}
+          <div className="flex justify-center items-center gap-8 flex-wrap">
+            {[
+              { icon: <FaXTwitter size={80} />, text: "JOIN X" },
+              { icon: <FaTelegramPlane size={80} />, text: "JOIN TELEGRAM" },
+              {
+                icon: (
+                  <img
+                    src={logoDex}
+                    alt="Dex Logo"
+                    className="w-20 h-20 object-contain"
+                  />
+                ),
+                text: "DEXSCREENER",
+              },
+            ].map((item, idx) => (
+              <div key={idx} className="flex flex-col items-center gap-4">
+                {/* Icon or Image */}
+                <div className="text-white">{item.icon}</div>
+
+                {/* Button */}
+                <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full text-md sm:text-lg md:text-xl lg:text-2xl">
+                  {item.text}
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
