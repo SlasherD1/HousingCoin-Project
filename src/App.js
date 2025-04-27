@@ -50,7 +50,7 @@ const App = () => {
           <h1 className="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl px-2 sm:px-4 md:px-8 py-4 sm:py-6 font-boldoa text-center leading-tight">
             THE <span className="text-yellow-500">SHORTCUTS SOLUTION</span> FOR
             YOU WITHOUT SPENDING DECADES SAVING FOR{" "}
-            <span className="text-yellow-500">A HOUSE</span>
+            <span className="text-yellow-500">A HOUSING</span>
           </h1>
 
           {/* CA Address */}
@@ -81,16 +81,16 @@ const App = () => {
               WHAT IS
             </h1>
             <h1 className="font-bold text-[36px] md:text-[50px] leading-tight font-boldoa text-yellow-500">
-              HOUSECOIN?
+              HOUSINGCOIN?
             </h1>
             <p className="text-base md:text-lg font-semibold">
-              HouseCoin is a digital innovation created to simplify and
+              Housing Coin is a digital innovation created to simplify and
               modernize housing transactions. It provides a secure and
               transparent way for people to buy, sell, or manage property
-              ownership without complicated processes. By using HouseCoin, every
-              transaction becomes easier, faster, and more reliable, helping
-              both individuals and communities to handle housing needs more
-              smoothly.
+              ownership without complicated processes. By using Housing Coin,
+              every transaction becomes easier, faster, and more reliable,
+              helping both individuals and communities to handle housing
+              needs more smoothly.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ const App = () => {
       >
         <div className="flex flex-col lg:flex-col items-center gap-5 justify-center text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
           <div className="flex items-center gap-4 text-yellow-500 font-bold">
-            <span className="font-boldoa">1 $HOUSECOIN = 1 HOUSE</span>
+            <span className="font-boldoa">1 $HOUSINGCOIN = 1 HOUSE</span>
             <img
               src={HouseIcon}
               alt="Logo"
@@ -124,10 +124,10 @@ const App = () => {
 
           <div className="text-white font-bold flex flex-col items-center gap-2 bg-black/30 backdrop-blur-sm py-7 px-[80px] rounded-xl font-boldoa">
             <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
-              $0.0000 USD
+              $0.0000069 USD
             </span>
             <span className="text-md sm:text-lg md:text-xl lg:text-2xl">
-              HOUSE PRICE RN
+              HOUSING PRICE RN
             </span>
           </div>
 
@@ -187,12 +187,12 @@ const App = () => {
         >
           <div className="text-white font-bold flex flex-col items-center justify-center gap-2 bg-black/30 backdrop-blur-sm py-7 px-6 sm:px-12 lg:px-32 rounded-xl text-md sm:text-lg md:text-xl lg:text-2xl text-center">
             With traditional housing systems becoming more complicated and less
-            accessible, HouseCoin offers a fresh and straightforward
+            accessible, Housing Coin offers a fresh and straightforward
             alternative. It eliminates unnecessary barriers and inefficiencies,
             giving people a simpler and clearer path to manage housing-related
-            activities. HouseCoin ensures that everyone can participate in a
+            activities. Housing Coin ensures that everyone can participate in a
             fair and modernized housing environment where processes are open,
-            easy, and understandable.
+            easy, and understandable.
           </div>
         </div>
       </section>
@@ -265,8 +265,16 @@ const App = () => {
           {/* 3 kotak statistik */}
           <div className="flex justify-center items-center gap-8 flex-wrap">
             {[
-              { icon: <FaXTwitter size={80} />, text: "JOIN X" },
-              { icon: <FaTelegramPlane size={80} />, text: "JOIN TELEGRAM" },
+              {
+                icon: <FaXTwitter size={80} />,
+                text: "JOIN X",
+                link: "https://x.com/housingcoin",
+              },
+              {
+                icon: <FaTelegramPlane size={80} />,
+                text: "JOIN TELEGRAM",
+                link: "https://t.me/housing_coin",
+              },
               {
                 icon: (
                   <img
@@ -283,9 +291,11 @@ const App = () => {
                 <div className="text-white">{item.icon}</div>
 
                 {/* Button */}
-                <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full text-md sm:text-lg md:text-xl lg:text-2xl">
-                  {item.text}
-                </button>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full text-md sm:text-lg md:text-xl lg:text-2xl">
+                    {item.text}
+                  </button>
+                </a>
               </div>
             ))}
           </div>

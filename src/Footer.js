@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <span className="text-2xl reguler text-white">
-          ©Housecoin All rights reserved
+          ©Housingcoin All rights reserved
         </span>
       </div>
     </footer>
