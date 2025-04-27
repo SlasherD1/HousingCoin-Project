@@ -48,7 +48,7 @@ const App = () => {
 
           {/* Judul besar */}
           <h1 className="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl px-2 sm:px-4 md:px-8 py-4 sm:py-6 font-boldoa text-center leading-tight">
-            THE <span className="text-yellow-500">SHORTCUTS SOLUTION</span> FOR
+            THE <span className="text-yellow-500">SHORTCUT SOLUTION</span> FOR
             YOU WITHOUT SPENDING DECADES SAVING FOR{" "}
             <span className="text-yellow-500">HOUSING</span>
           </h1>
