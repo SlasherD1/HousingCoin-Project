@@ -50,7 +50,7 @@ const App = () => {
           <h1 className="w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl px-2 sm:px-4 md:px-8 py-4 sm:py-6 font-boldoa text-center leading-tight">
             THE <span className="text-yellow-500">SHORTCUTS SOLUTION</span> FOR
             YOU WITHOUT SPENDING DECADES SAVING FOR{" "}
-            <span className="text-yellow-500">A HOUSING</span>
+            <span className="text-yellow-500">A HOUSIN</span>
           </h1>
 
           {/* CA Address */}
@@ -167,7 +167,7 @@ const App = () => {
           {/* Teks di atas video */}
           <div className="relative rajdhani text-white px-6 md:px-16 lg:px-32 py-[20vh] flex flex-col items-center gap-5 justify-center text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
             <div className="text-yellow-500">
-              HOUSING MARKET IS A{" "}
+              HOUSIN MARKET IS A{" "}
               <span>
                 JOKE NOWADAYS! <span>WELL TWO CAN PLAY</span> THAT GAME
               </span>
