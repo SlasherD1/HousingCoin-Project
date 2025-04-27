@@ -167,7 +167,7 @@ const App = () => {
           {/* Teks di atas video */}
           <div className="relative rajdhani text-white px-6 md:px-16 lg:px-32 py-[20vh] flex flex-col items-center gap-5 justify-center text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
             <div className="text-yellow-500">
-              HOUSE MARKET IS A{" "}
+              HOUSING MARKET IS A{" "}
               <span>
                 JOKE NOWADAYS! <span>WELL TWO CAN PLAY</span> THAT GAME
               </span>
