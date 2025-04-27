@@ -144,7 +144,7 @@ const App = () => {
               placeholder="search for your dream house (1$housecoin = 1 house)"
               className="flex-1 bg-transparent backdrop-blur-sm border border-yellow-500 outline-none text-white placeholder-white text-lg py-2 px-4 rounded-lg w-full max-w-lg"
             />
-            <button className="bg-white text-black font-bold py-2 px-6 rounded-lg text-md sm:text-lg md:text-xl lg:text-2xl">
+            <button className="bg-white text-black font-bold py-2 px-6 rounded-lg text-md sm:text-lg md:text-xl lg:text-2xl font-boldoa">
               SEARCH
             </button>
           </div>
@@ -190,7 +190,7 @@ const App = () => {
             backgroundRepeat: "no-repeat",
             height: "50vh",
           }}
-          className="rajdhani text-white px-6 md:px-16 lg:px-32 py-[5vh] md:py-[7vh] lg:py-[20vh]"
+          className="rajdhani text-white px-6 md:px-16 lg:px-32 py-[5vh] md:py-[7vh] lg:py-[15vh]"
         >
           <div className="text-white font-bold flex flex-col items-center justify-center gap-2 bg-black/30 backdrop-blur-sm py-7 px-6 sm:px-12 lg:px-32 rounded-xl text-md sm:text-lg md:text-xl lg:text-2xl text-center">
             <span>
@@ -199,13 +199,12 @@ const App = () => {
               locks? Same.
             </span>
             <span>
-              Housing Coin said: "If the game’s rigged, change the game." No
-              middlemen, no red tape, no need to summon ancient spirits to close
-              a deal.
+              We say : "if the game’s rigged, change the game." No middlemen, no
+              red tape, no need to call a property agent to close a deal.
             </span>
             <span>
-              We’re not here to sell you dreams. We’re just here to make housing
-              suck less.
+              We’re not here to sell you dreams. We’re just here to make
+              housing suck less.
             </span>
           </div>
         </div>
